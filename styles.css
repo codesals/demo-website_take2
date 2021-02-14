@@ -1,0 +1,146 @@
+body {
+    text-align: center;
+      vertical-align: center;
+}
+
+h1{
+  font-weight:bold;
+}
+
+ol, ul{
+  text-align: left;
+}
+
+.wrapper {
+  width:auto;
+  justify-content: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #7a1e1c;
+  /* margin: auto; */
+  margin: 10% 5% 10% 5%;
+  text-align: center;
+  vertical-align: center;
+  /* background-color:#9e9e9e; */
+}
+
+img{
+  width:360px;
+  height:270px;
+  border-radius: 5px;
+}
+
+.flexcontainer{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* body {
+  font-family: Arial, Helvetica, sans-serif;
+} */
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 360px;
+  height: 270px;
+  /* border: 1px solid black; */
+  perspective: 1000px; /*Remove this if you don't want the 3D effect */
+  padding:10px;
+  border-radius: 5px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  border-radius: 5px;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  border-radius: 5px;
+}
+
+  a:hover {
+  background-color: lightgreen;
+  text-decoration: underline;
+  cursor:pointer;
+}
+
+a{
+  text-shadow: white;
+  color: #7a1e1c;
+  text-decoration: none;
+    cursor:pointer;
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  border-radius: 5px;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  border-radius: 5px;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color:rgb(245, 231, 220);
+  color: #7a1e1c;
+  transform: rotateY(180deg);
+  border-radius: 5px;
+  /* padding: 10px; */
+}
+
+.imgcontainer {
+  position: relative;
+  max-width: 800px; /* Maximum width */
+  margin: 0 auto; /* Center it */
+  border-radius: 5px;
+}
+
+.imgcontainer .imgcontent {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  border-radius: 5px;
+  /* padding: 20px; Some padding */
+}
+
+.card-front-subheading{
+font-size:large;
+}
+
+.storytext{
+  text-align:justify;
+  padding:10px;
+  font-size:small;
+  text-justify:distribute-all-lines;
+}
+
+/* @media (max-width: 600px) {
+  /* img {
+    margin-bottom: 15px;
+  } */
+
+  /* .card {
+    flex-direction: column;
+    align-items: center;
+  } */ */
